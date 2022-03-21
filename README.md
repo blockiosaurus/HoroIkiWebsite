@@ -36,6 +36,16 @@ yarn test:e2e
 yarn lint
 ```
 
-### Customize configuration
+### Change FARM ID
+change farm id in farmer.vue
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+const farm = ref<string>("HERE YOUR FARM ID");
+```
+
+### Change Cluster Devnet / Mainnet 
+Change cluster in ConfigPane.vue
+
+```
+setCluster(Cluster.Mainnet); /  setCluster(Cluster.Devnet);
+````
