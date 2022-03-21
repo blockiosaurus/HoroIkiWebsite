@@ -23,17 +23,17 @@
           :key="farmerAcc.rewardA"
           :farmReward="farmAcc.rewardA"
           :reward="farmerAcc.rewardA"
-          title="Reward A"
+          title="Rewards"
         />
       </div>
-      <div class="flex-1 rounded-lg">
+      <!-- <div class="flex-1 rounded-lg">
         <FarmerRewardDisplay
           :key="farmerAcc.rewardB"
           :farmReward="farmAcc.rewardB"
           :reward="farmerAcc.rewardB"
           title="Reward B"
         />
-      </div>
+      </div> -->
     </div>
     <button class="nes-btn is-primary mb-5" @click="refreshFarmer">
       Refresh account
