@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-black flex flex-row justify-center align-middle">
+  <nav class="bg-white flex flex-row justify-center align-middle">
     <NavButton
       v-for="i in menu"
       :key="i.name"
@@ -22,9 +22,9 @@ export default defineComponent({
     const path = computed(() => route.path);
 
     const menu = [
-      { name: '/', url: '/' },
-      { name: 'FARM MANAGER', url: '/manager' },
-      { name: 'FARMER', url: '/farmer' },
+      { name: 'STAKING AREA', url: '/' },
+      // { name: 'FARM MANAGER', url: '/manager' },
+      // { name: 'FARMER', url: '/farmer' },
     ];
 
     return {

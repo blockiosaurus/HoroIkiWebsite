@@ -1,5 +1,6 @@
 <template>
   <ConfigPane />
+  <img src="../assets/3Ikimono.png" width="400"  class="mx-auto mt-10 mb-10" />
   <div v-if="!wallet" class="text-center text-white">Please connect your wallet</div>
   <div v-else>
     <!--farm address-->

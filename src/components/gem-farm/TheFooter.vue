@@ -17,7 +17,6 @@
         >gemworks</span
       >
     </p>
-    <img src="../../assets/gg_logo.png" height="31" width="28" />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-full min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 .">
     <TheNavBar />
-    <div class="italic mt-5 text-center text-white">WELCOME TO NOROIKIMONO STAKING</div>
+    <div class="italic mt-5 text-center text-white">WELCOME TO HOROIKIMONO STAKING</div>
     <img src="./assets/logo.png"  class="mx-auto mt-10" />
     <div class="p-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 .">
       <router-view />
