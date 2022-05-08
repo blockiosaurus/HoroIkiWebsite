@@ -10,7 +10,7 @@ const {
 export interface INFT {
   pubkey?: PublicKey;
   mint: PublicKey;
-  onchainMetadata: unknown;
+  onchainMetadata: any;
   externalMetadata: unknown;
 }
 
@@ -70,5 +70,18 @@ export async function getNFTsByOwner(
   const tokens = await getTokensByOwner(owner, conn);
   console.log(`found ${tokens.length} tokens`);
 
-  return await getNFTMetadataForMany(tokens, conn);
+  let nftMeta: INFT[] = await getNFTMetadataForMany(tokens, conn);
+  console.log(nftMeta);
+
+  let horos: INFT[] = [];
+  for (let nft of nftMeta){
+    console.log("Parsing %s", nft.onchainMetadata.data.name);
+    console.log(nft.onchainMetadata.data.creators[0]);
+    if (nft.onchainMetadata.data.creators[0].address === "4fxCpetwa7VLktbmzV9W37NDJDXMbK5QsSbNiCLfmau7")
+    {
+      console.log("Pushing %s", nft.onchainMetadata.data.name);
+      horos.push(nft);
+    }
+  }
+  return horos;
 }

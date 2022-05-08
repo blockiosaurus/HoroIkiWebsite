@@ -121,6 +121,7 @@ export default defineComponent({
     const updateAvailableRewards = async () => {
       availableA.value = farmerAcc.value.rewardA.accruedReward
         .sub(farmerAcc.value.rewardA.paidOutReward)
+        .div(10 ** 9)
         .toString();
       availableB.value = farmerAcc.value.rewardB.accruedReward
         .sub(farmerAcc.value.rewardB.paidOutReward)
