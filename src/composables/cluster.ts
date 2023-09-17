@@ -11,7 +11,7 @@ export enum Cluster {
 }
 
 const clusterURLMapping = {
-  mainnet: process.env.VUE_APP_MAINNET_URL || 'https://ssc-dao.genesysgo.net/',
+  mainnet: process.env.VUE_APP_MAINNET_URL || 'https://solana-mainnet.rpc.extrnode.com',
   devnet: process.env.VUE_APP_DEVNET_URL || 'https://api.devnet.solana.com',
   testnet: process.env.VUE_APP_TESTNET_URL || 'https://api.testnet.solana.com',
   localnet: process.env.VUE_APP_LOCALNET_URL || 'http://localhost:8899',
